@@ -22,6 +22,7 @@ function getApi (){
         for (var i=0; i < data.data.length; i++){
             var column = document.createElement("div")
             column.classList.add("column", "is-one-quarter")
+            column.setAttribute("id", "columns")
             var card = document.createElement("div")
             card.classList.add("card")
             column.appendChild(card)
@@ -61,7 +62,7 @@ function getApi (){
             rating.textContent = "Rating: Unavailable"    
             }
             var content = document.createElement("div")
-            content.classList.add("content", "text")
+            content.classList.add("content", "text", "text-margin")
             card.appendChild(content)
             content.textContent= data.data[i].attributes.description
             columns.appendChild(column)
