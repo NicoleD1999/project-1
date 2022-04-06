@@ -12,7 +12,7 @@ var finalData = newUrlData[1];
 function getApi (){
     var kitsuBaseUrl = 'https://kitsu.io/api/edge';
     var kitsuCatUrl = '/anime?filter[categories]=adventure';
-    var kitsuTextUrl = `/anime?filter[text]=${finalData}`;
+    var kitsuTextUrl = `/anime?page[limit]=6&filter[text]=${finalData}`;
     fetch(kitsuBaseUrl + kitsuTextUrl)
     .then(function (response){
         return response.json();
@@ -61,18 +61,16 @@ function getApi (){
             if(data.data[i].attributes.averageRating == null){
             rating.textContent = "Rating: Unavailable"    
             }
+            var descriptionDiv = document.createElement ("div")
+            card.appendChild(descriptionDiv)
+            var description = document.createElement ("h4")
+            descriptionDiv.appendChild(description)
+            description.classList.add("text-margin")
+            description.textContent = "Description"
             var content = document.createElement("div")
             content.classList.add("content", "text", "text-margin")
             card.appendChild(content)
             content.textContent= data.data[i].attributes.description
-            var readMore = document.createElement("button")
-            card.appendChild(readMore)
-            readMore.textContent="Read More"
-            readMore.addEventListener("click", function(){
-                if (content.classList.contains("text", 'text-margin')) {
-                content.classList.remove("text", "text-margin")
-                }
-            })
             var viewTrailer = document.createElement("button")
             viewTrailer.textContent = "View Trailer"
             card.appendChild(viewTrailer)
@@ -84,8 +82,4 @@ function getApi (){
     // fetch (kitsuBaseUrl + kitsuCatUrl)
 }
 getApi()
-var readMore = document.createElement("button")
-
-
-
 

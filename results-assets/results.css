@@ -3,13 +3,14 @@
 }
 
 
-.text {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2; /* number of lines to show */
-    -webkit-box-orient: vertical;
- }
  .text-margin {
      margin-left: 25px;
+ }
+
+ .text {
+ height:120px;
+ width:300px;
+ border:1px solid #ccc;
+ font:16px/26px Georgia, Garamond, Serif;
+ overflow:auto;
  }
