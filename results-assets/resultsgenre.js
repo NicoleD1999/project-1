@@ -11,9 +11,8 @@ var finalData = newUrlData[1];
 
 function getApi (){
     var kitsuBaseUrl = 'https://kitsu.io/api/edge';
-    var kitsuCatUrl = '/anime?filter[categories]=adventure';
-    var kitsuTextUrl = `/anime?filter[text]=${finalData}`;
-    fetch(kitsuBaseUrl + kitsuTextUrl)
+    var kitsuCatUrl = `/anime?filter[categories]=${finalData}`;
+    fetch(kitsuBaseUrl + kitsuCatUrl)
     .then(function (response){
         return response.json();
     })
@@ -32,13 +31,13 @@ function getApi (){
             var figure = document.createElement("figure")
             figure.classList.add("image", "is-4by3")
             cardImage.appendChild(figure);
-            // var image = document.createElement("img")
-            // var displayImage = data.data[i].attributes.coverImage.tiny
-            // image.setAttribute("src", displayImage)
-            // figure.appendChild(image)
-            // if (displayImage = null){
-            //     image.removeAttribute("src", displayImage)
-            // }
+            var image = document.createElement("img")
+            var displayImage = data.data[i].attributes.posterImage.small
+            image.setAttribute("src", displayImage)
+            figure.appendChild(image)
+            if (displayImage = null){
+                image.removeAttribute("src", displayImage)
+            }
             var cardContent = document.createElement("div")
             cardContent.classList.add("card-content")
             card.appendChild(cardContent)
@@ -57,10 +56,7 @@ function getApi (){
             para.textContent= data.data[i].attributes.canonicalTitle
             var rating = document.createElement("p")
             mediaContent.appendChild(rating)
-            rating.textContent = "Rating: " + data.data[i].attributes.averageRating + " /100"
-            if(data.data[i].attributes.averageRating == null){
-            rating.textContent = "Rating: Unavailable"    
-            }
+            rating.textContent = "Release Date: " + data.data[i].attributes.startDate
             var content = document.createElement("div")
             content.classList.add("content", "text", "text-margin")
             card.appendChild(content)
@@ -75,17 +71,10 @@ function getApi (){
             })
             var viewTrailer = document.createElement("button")
             viewTrailer.textContent = "View Trailer"
-            card.appendChild(viewTrailer)
             columns.appendChild(column)
- 
 
         }
     })
     // fetch (kitsuBaseUrl + kitsuCatUrl)
 }
 getApi()
-var readMore = document.createElement("button")
-
-
-
-
