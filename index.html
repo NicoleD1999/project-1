@@ -4,42 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
+    <!-- <style>
         body {background-image: url(./assets/anime_blindfold.webp);}
-    </style>
+    </style> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Anime Search Bar</title>
 </head>
-<body>
+<body style="background-image: url(./assets/anime_blindfold.webp);
+             background-size: 100%;
+             background-repeat: no-repeat">
 
     <div class="topnav">
         <a class="active" href="#home">Home Page</a>
     </div>
 
-    <div class="field is-grouped is-grouped-centered">
+    <div id="searchContainer" class="field is-grouped is-grouped-centered">
+
         <form class="search" action="INSERT LINK TO HTML 2 HERE">
             <input type="text" placeholder="Search Anime by Title..." name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
         </form>
-    </div>
 
-    <form class="field is-grouped is-grouped-centered" >  
-        <p> Search by Genre... </p>  
-            <select id = "myList" onchange = "genre()" >   
-                <option> Action </option>  
-                <option> Comedy </option>  
-                <option> Drama </option> 
-                <option> Fantasy </option> 
-                <option> Historical </option> 
-                <option> Horror </option> 
-                <option> Magic </option>
-                <option> Mecha </option>
-                <option> Military </option> 
-                <option> Sports </option>  
-            </select>  
-        </form>  
+        <form class="field is-grouped is-grouped-centered" >  
+            <p> Search by Genre... </p>  
+                <select id = "myList" onchange = "genre()" >   
+                    <option value="">  </option>  
+                    <option value="-action category-"> Action </option>  
+                    <option value="-comedy category-"> Comedy </option>  
+                    <option value="-drama category-"> Drama </option> 
+                    <option value="-fantasy category-"> Fantasy </option> 
+                    <option value="-historicalcategory-"> Historical </option> 
+                    <option value="-horror category-"> Horror </option> 
+                    <option value="-magic category-"> Magic </option>
+                    <option value="-mecha category-"> Mecha </option>
+                    <option value="-slice category-"> Slice of Life </option> 
+                    <option value="-sports category-"> Sports </option>  
+                </select>  
+        </form> 
+
+    </div>
 
 </body>
 </html>
