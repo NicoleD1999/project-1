@@ -19,29 +19,30 @@
 
     <div id="searchContainer" class="field is-grouped is-grouped-centered">
 
-        <form class="search" action="INSERT LINK TO HTML 2 HERE">
-            <input type="text" placeholder="Search Anime by Title..." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
+        <form class="search">
+            <input type="text" placeholder="Search Anime by Title..." name="search" class="user-search">
+            <button type="submit"><i class="fa fa-search searchBtn"></i></button>
         </form>
 
         <form class="field is-grouped is-grouped-centered" >  
             <p> Search by Genre... </p>  
-                <select id = "myList" onchange = "genre()" >   
-                    <option value="">  </option>  
-                    <option value="-action category-"> Action </option>  
-                    <option value="-comedy category-"> Comedy </option>  
-                    <option value="-drama category-"> Drama </option> 
-                    <option value="-fantasy category-"> Fantasy </option> 
-                    <option value="-historicalcategory-"> Historical </option> 
-                    <option value="-horror category-"> Horror </option> 
-                    <option value="-magic category-"> Magic </option>
-                    <option value="-mecha category-"> Mecha </option>
-                    <option value="-slice category-"> Slice of Life </option> 
-                    <option value="-sports category-"> Sports </option>
+                <select id = "myList" >   
+                    <option disabled="disabled">Search by Genre</option>  
+                    <option value="action"> Action </option>  
+                    <option value="comedy"> Comedy </option>  
+                    <option value="drama"> Drama </option> 
+                    <option value="fantasy"> Fantasy </option> 
+                    <option value="historical"> Historical </option> 
+                    <option value="horror"> Horror </option> 
+                    <option value="magic"> Magic </option>
+                    <option value="mecha"> Mecha </option>
+                    <option value="slice of life"> Slice of Life </option> 
+                    <option value="sports"> Sports </option>
                 </select>  
+                <button type="submit"><i class="fa fa-search searchGenre"></i></button>
         </form> 
 
     </div>
-
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
