@@ -1,0 +1,17 @@
+.topnav, .search {
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.modal-card {
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 0px;
+    padding: 15px;
+    border: solid 1px rgb(179, 179, 179);
+    border-radius: 5px;
+}
+
+#modalTitle {
+    padding-top: 10px;
+}

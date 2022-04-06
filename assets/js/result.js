@@ -1,5 +1,5 @@
 // modal
-// activate button
+// active button
 const infoButton = document.querySelector('#infoBtn');
 const modalBg = document.querySelector('.modal-background');
 const modal = document.querySelector('.modal')
