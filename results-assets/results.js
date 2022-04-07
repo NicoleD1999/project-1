@@ -74,6 +74,7 @@ function getApi (){
                 }
             })
             var viewTrailer = document.createElement("button")
+            viewTrailer.setAttribute("id","infoBtn")
             viewTrailer.textContent = "View Trailer"
             card.appendChild(viewTrailer)
             columns.appendChild(column)
@@ -81,11 +82,31 @@ function getApi (){
 
         }
     })
+
     // fetch (kitsuBaseUrl + kitsuCatUrl)
 }
+
 getApi()
 var readMore = document.createElement("button")
 
 
+// const infoButton = document.querySelector('#infoBtn');
+// const modalBg = document.querySelector('.modal-background');
+// const modal = document.querySelector('.modal')
+
+// //close button
+// const infoButtonModal = document.querySelector('#infoBtnModal')
+
+// infoButton.addEventListener('click', () => {
+//     modal.classList.add('is-active');
+// });
+
+// modalBg.addEventListener('click', () => {
+//     modal.classList.add('is-active');
+// });
+
+// infoButtonModal.addEventListener('click', () => {
+//     modal.classList.remove('is-active');
+// });
 
 
