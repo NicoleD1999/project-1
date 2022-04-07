@@ -13,18 +13,23 @@
              background-size: 100%;
              background-repeat: no-repeat">
 
-    <div class="topnav">
-        <a class="active" href="#home">Home Page</a>
+    <div class="topnav columns mt-3 ml-3">
+        <a class="active column" href="./index.html">Home</a>
+        
+      <div class="navbar-item has-dropdown is-hoverable column" id="dropdown">
+        <a class="navbar-link">
+          Anime Watch List
+        </a>
+      </div>
+
     </div>
 
-    <div id="searchContainer" class="field is-grouped is-grouped-centered">
-
-        <form class="search">
+        <form id="searchBar" class="search field is-grouped is-grouped-centered">
             <input type="text" placeholder="Search Anime by Title..." name="search" class="user-search">
             <button type="submit"><i class="fa fa-search searchBtn"></i></button>
         </form>
 
-        <form class="field is-grouped is-grouped-centered" >  
+        <form id="genre" class="field is-grouped is-grouped-centered" >  
             <p> Search by Genre... </p>  
                 <select id = "myList" >   
                     <option disabled="disabled">Search by Genre</option>  
@@ -61,6 +66,9 @@
             </div>
           </div>
           
+
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
 <script src="./assets/js/script.js"></script>
 </body>
 </html>

@@ -1,8 +1,14 @@
 body, html {
     height: 100%;
+    background-color: #fbedf9;
   }
 
-#searchContainer {
+#genre {
+  position: relative;
+  top: 30%;
+}
+
+#searchBar {
     position: relative;
-    top: 40%;
+    top: 30%;
 }
