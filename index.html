@@ -13,33 +13,35 @@
              background-size: 100%;
              background-repeat: no-repeat">
 
-    <div class="topnav">
+    <div class="topnav mt-3 ml-3">
         <a class="active" href="#home">Home Page</a>
     </div>
 
     <div id="searchContainer" class="field is-grouped is-grouped-centered">
 
-        <form class="search" action="INSERT LINK TO HTML 2 HERE">
-            <input type="text" placeholder="Search Anime by Title..." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
+        <form id=searchBar class="field has-addons" class="search" action="./results.html">
+            <input class="input is-primary is-rounded" type="text" placeholder="Search Anime by Title..." name="search">
+            <span class="icon is-medium is-right">
+                <button id="searchBtn" type="submit"><i class="fa fa-search"></i></button>
+            </span>
         </form>
 
-        <form class="field is-grouped is-grouped-centered" >  
-            <p> Search by Genre... </p>  
-                <select id = "myList" onchange = "genre()" >   
-                    <option value="">  </option>  
-                    <option value="-action category-"> Action </option>  
-                    <option value="-comedy category-"> Comedy </option>  
-                    <option value="-drama category-"> Drama </option> 
-                    <option value="-fantasy category-"> Fantasy </option> 
-                    <option value="-historicalcategory-"> Historical </option> 
-                    <option value="-horror category-"> Horror </option> 
-                    <option value="-magic category-"> Magic </option>
-                    <option value="-mecha category-"> Mecha </option>
-                    <option value="-slice category-"> Slice of Life </option> 
-                    <option value="-sports category-"> Sports </option>
-                </select>  
+        <form id="genreDropdown" class="field is-grouped is-grouped-centered" >  
+            <select class="select is-rounded" id = "myList" onchange = "genre()" >   
+                <option value=""> Search by Genre </option>  
+                <option value="-action category-"> Action </option>  
+                <option value="-comedy category-"> Comedy </option>  
+                <option value="-drama category-"> Drama </option> 
+                <option value="-fantasy category-"> Fantasy </option> 
+                <option value="-historicalcategory-"> Historical </option> 
+                <option value="-horror category-"> Horror </option> 
+                <option value="-magic category-"> Magic </option>
+                <option value="-mecha category-"> Mecha </option>
+                <option value="-slice category-"> Slice of Life </option> 
+                <option value="-sports category-"> Sports </option>
+            </select>  
         </form> 
+
 
     </div>
 
