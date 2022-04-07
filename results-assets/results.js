@@ -105,30 +105,22 @@ function getApi (){
         }
     })
 
-    // fetch (kitsuBaseUrl + kitsuCatUrl)
 }
 
 getApi()
 var readMore = document.createElement("button")
 
+function renderResults (){
+  var renderResults = (JSON.parse(localStorage.getItem("animeList")));
+  console.log(renderResults)
+    for (i=0; i < renderResults.length; i++){
+     var history = document.createElement("option")
+     history.innerHTML = renderResults[i]
+     var searchHistory = document.querySelector(".search-history")
+     searchHistory.appendChild(history)
+    }
 
-// const infoButton = document.querySelector('#infoBtn');
-// const modalBg = document.querySelector('.modal-background');
-// const modal = document.querySelector('.modal')
-
-// //close button
-// const infoButtonModal = document.querySelector('#infoBtnModal')
-
-// infoButton.addEventListener('click', () => {
-//     modal.classList.add('is-active');
-// });
-
-// modalBg.addEventListener('click', () => {
-//     modal.classList.add('is-active');
-// });
-
-// infoButtonModal.addEventListener('click', () => {
-//     modal.classList.remove('is-active');
-// });
+}
+renderResults()
 
 
