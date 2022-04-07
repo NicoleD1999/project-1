@@ -75,6 +75,7 @@ function getApi (){
             })
             var viewTrailer = document.createElement("button")
             viewTrailer.setAttribute("id","infoBtn")
+            viewTrailer.setAttribute("data-youtubeid",data.data[i].attributes.youtubeVideoId)
             viewTrailer.textContent = "View Trailer"
             card.appendChild(viewTrailer)
             columns.appendChild(column)
