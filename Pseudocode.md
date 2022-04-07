@@ -2,7 +2,8 @@
 
 ## Search Layout:
 - Search bar
-- Dropdown menu for genres
+- Dropdown menu
+    - Watchlist
 
 ## Result Layout:
 - Cards
