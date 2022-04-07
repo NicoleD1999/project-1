@@ -7,6 +7,23 @@
      margin-left: 25px;
  }
 
+ /* youtube api css */
+
+ #videos {
+    height:337.5px;
+    width:600px; 
+}
+
+iframe{
+    margin:15px;
+    height:337.5px;
+    width:600px;  
+}
+#imgNone {
+    display: none;
+}
+
+ /* youtube api css */
  .text {
  height:120px;
  width:300px;
