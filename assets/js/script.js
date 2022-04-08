@@ -19,7 +19,7 @@ var captUserGenre = userGenre.value
 document.location.href = "./resultsgenre.html?search=" + captUserGenre
 })
 
-var watchList = JSON.parse(localStorage.getItem("animeList"));
+var watchList = JSON.parse(localStorage.getItem("animeList")) || [];
 function animeWatchList () {
     watchList.push(userSearch.value)
     console.log(userSearch)
