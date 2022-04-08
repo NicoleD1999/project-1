@@ -12,12 +12,12 @@ body, html {
 
 #genre {
   position: relative;
-  top: 30%;
+  top: 35%;
 }
 
 #searchBar {
     position: relative;
-    top: 30%;
+    top: 35%;
 }
 
 .user-search, #myList {

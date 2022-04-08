@@ -61,20 +61,12 @@ function getApi (){
             content.classList.add("content", "text", "text-margin")
             card.appendChild(content)
             content.textContent= data.data[i].attributes.description
-            var readMore = document.createElement("button")
-            card.appendChild(readMore)
-            readMore.textContent="Read More"
-            readMore.addEventListener("click", function(){
-                if (content.classList.contains("text", 'text-margin')) {
-                content.classList.remove("text", "text-margin")
-                }
-            })
+
             var viewTrailer = document.createElement("button")
             viewTrailer.textContent = "View Trailer"
             columns.appendChild(column)
 
         }
     })
-    // fetch (kitsuBaseUrl + kitsuCatUrl)
 }
 getApi()
