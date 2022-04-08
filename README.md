@@ -17,4 +17,4 @@
 
 ![alt](./assets/images/anime_screenshot.JPG)
 
-Click [here](https://nicoled1999.github.io/project-1/) to view our website
+Click [here](https://nicoled1999.github.io/project-1/) to view our website.
