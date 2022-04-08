@@ -1,11 +1,22 @@
 body, html {
     height: 100%;
     background-color: #fbedf9;
-  }
+}
+
+ #animeHeader {
+    font-size: 100px;
+    font-weight: bold;
+}
 
 #columns{
  margin-top: 10px;
  margin-left: 10px
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
 }
 
 #main {
