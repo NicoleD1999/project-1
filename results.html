@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./results-assets/results.css">
     <title>Anime Search Results</title>
 </head>
@@ -14,7 +15,8 @@
              background-repeat: no-repeat">
 
     <div class="topnav mt-6 ml-6">
-      <a class="active" href="./index.html">Back to Search</a>
+      <a class="active search" href="./index.html" style="color: rgb(218, 131, 145);
+      font-size: larger">Back to Search</a>
 
       <div class="dropdown is-hoverable">
         <div class="dropdown-trigger">
@@ -35,7 +37,7 @@
 
     </div>
 
-    <h1 class="title mt-6 ml-6">Anime Results:</h1>
+    <h1 class="title mt-6 ml-6" id="animeHeader">ANIME<span style="color: rgb(218, 131, 145)">results</span></h1>
 
     <div class="columns is-multiline" id="main"></div>
 

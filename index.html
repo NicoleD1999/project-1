@@ -6,28 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Anime Search Bar</title>
 </head>
 <body style="background-image: url(./assets/anime_blindfold.webp);
              background-size: 100%;
-             background-repeat: no-repeat">
+             background-repeat: no-repeat;">
 
     <div class="topnav columns mt-3 ml-3">
-        <a class="active column" href="./index.html">Home</a>
-        
-
+        <a class="active column" href="./index.html"
+        style="color: rgb(218, 131, 145);
+               font-size: larger">Home</a>   
     </div>
 
         <form id="searchBar" class="search field is-grouped is-grouped-centered">
             <input type="text" placeholder="Search Anime by Title..." name="search" class="user-search">
-            <button type="submit"><i class="fa fa-search searchBtn"></i></button>
+            <button type="submit" id="submitBtn" class="fa fa-search searchBtn"></button>
         </form>
 
         <form id="genre" class="field is-grouped is-grouped-centered" >  
-            <p> Search by Genre... </p>  
                 <select id = "myList" >   
-                    <option disabled="disabled">Search by Genre</option>  
+                    <option value="">Search by Genre</option>  
                     <option value="action"> Action </option>  
                     <option value="comedy"> Comedy </option>  
                     <option value="drama"> Drama </option> 
@@ -39,30 +39,11 @@
                     <option value="slice of life"> Slice of Life </option> 
                     <option value="sports"> Sports </option>
                 </select>  
-                <button type="submit"><i class="fa fa-search searchGenre"></i></button>
-        </form> 
+                <button type="submit" id="submitGenreBtn" class="fa fa-search searchGenre"></i></button>
+        </form>
 
-        <!-- local storage -->
+    <h1 id="animeHeader">ANIME<span style="color: rgb(218, 131, 145)">search</span></h1>
 
-        <div class="dropdown is-hoverable">
-            <div class="dropdown-trigger">
-              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
-                <span>History</span>
-              </button>
-            </div>
-            <div class="dropdown-menu" id="dropdown-menu4" role="menu">
-              <div class="dropdown-content">
-                <div class="dropdown-item">
-                    <li>
-                        <option value="animeTitle"></option>
-                    </li>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-
-    </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
 <script src="./assets/js/script.js"></script>
 </body>

@@ -3,6 +3,11 @@ body, html {
     background-color: #fbedf9;
   }
 
+#animeHeader {
+    font-size: 100px;
+    font-weight: bold;
+}
+
 #columns{
  margin-top: 10px;
  margin-left: 10px
